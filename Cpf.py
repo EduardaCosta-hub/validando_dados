@@ -21,3 +21,12 @@ class Cpf():
         parte_d = self.__cpf[9:]
         cpf_formatado = (f"{parte_a}.{parte_b}.{parte_c}-{parte_d}")
         return cpf_formatado
+    
+    #Properties
+    @property
+    def cpf(self):
+        return self.__cpf
+    
+    @property
+    def cpf_formatado(self):
+        return self.__cpf_formatado
